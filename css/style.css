@@ -37,7 +37,7 @@ color: white;
 /* INICIO */
 .bckImage {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 87vh;
   left: 3px;
   top: -3px;
