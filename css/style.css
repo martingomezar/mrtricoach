@@ -2,6 +2,15 @@
   font-family: "Roboto", sans-serif !important;
 }
 
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+div .container-fluid {
+  margin: 0;
+}
+
 /* NAVBAR */
 
 .navbarLogo {
@@ -14,18 +23,17 @@
   font-weight: bold;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link {
   padding-left: 4rem;
   padding-top: 1rem;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
+.navbar-dark .navbar-nav .nav-link:hover {
   text-decoration: none;
   color: #26e673;
 }
 
 .isotipo {
-  position: absolute;
   width: 165px;
   height: 45px;
   left: 217px;
