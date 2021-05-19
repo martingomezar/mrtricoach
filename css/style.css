@@ -1,7 +1,5 @@
 * {
   font-family: "Roboto", sans-serif !important;
-text-decoration: none;
-color: white;
 }
 
 /* NAVBAR */
@@ -27,7 +25,7 @@ color: white;
 }
 
 .isotipo {
-  
+  position: absolute;
   width: 165px;
   height: 45px;
   left: 217px;
@@ -35,14 +33,6 @@ color: white;
 }
 
 /* INICIO */
-.bckImage {
-  position: absolute;
-  width: 100vw;
-  height: 87vh;
-  left: 3px;
-  top: -3px;
-  background-image: url("../assets/01paolocandelo53B17GiIhTAunsplash.jpg");
-}
 
 .inicioTitulo {
   position: absolute;
