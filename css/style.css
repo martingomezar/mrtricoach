@@ -13,8 +13,21 @@ div .container-fluid {
 
 /* NAVBAR */
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  padding-left: 5rem;
+}
+
+.right {
+  padding-right: 5rem;
+}
+
 .navbarLogo {
-  line-height: 35px;
+  line-height: 2rem ;
   letter-spacing: -0.1em;
   text-transform: uppercase;
 }
@@ -23,9 +36,12 @@ div .container-fluid {
   font-weight: bold;
 }
 
+.navbar-nav {
+  display: flex;
+}
+
 .navbar-dark .navbar-nav .nav-link {
-  padding-left: 4rem;
-  padding-top: 1rem;
+  padding-left: 1rem;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -34,10 +50,10 @@ div .container-fluid {
 }
 
 .isotipo {
-  width: 165px;
-  height: 45px;
-  left: 217px;
-  top: 22px;
+  width: 14rem;
+  height: 2rem;
+  left: 15rem;
+  top: 1.5rem;
 }
 
 /* INICIO */
