@@ -5,6 +5,7 @@
 body {
   padding: 0px;
   margin: 0px;
+  color: white;
 }
 
 div .container-fluid {
@@ -16,6 +17,7 @@ div .container-fluid {
 .navbar {
   display: flex;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .left {
@@ -27,7 +29,7 @@ div .container-fluid {
 }
 
 .navbarLogo {
-  line-height: 2rem ;
+  line-height: 2rem;
   letter-spacing: -0.1em;
   text-transform: uppercase;
 }
@@ -58,10 +60,15 @@ div .container-fluid {
 
 /* INICIO */
 
+.bg-overlay {
+  height: 91vh;
+  background-image: url("https://raw.githubusercontent.com/martingomezar/mrtricoach/main/assets/01paolocandelo53B17GiIhTAunsplash.jpg");
+}
+
 .inicioTitulo {
   position: absolute;
-  width: 747px;
-  height: 220px;
+  width: 50rem;
+  height: 10rem;
   left: 249px;
   top: 175px;
   font-weight: 900;
@@ -97,4 +104,51 @@ div .container-fluid {
   right: 94.08%;
   top: 46%;
   bottom: 68.63%;
+}
+
+/* COACH */
+
+.coach {
+  background-color: black;
+  padding: 0px;
+  margin: 0px;
+}
+
+.leftTitle {
+  width: 209px;
+  height: 90px;
+  left: 57px;
+  top: 66px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 45px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.leftTextOne {
+  width: 300px;
+  height: 90px;
+  left: 57px;
+  top: 66px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 45px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.leftTextTwo {
+  width: 405px;
+  height: 600px;
+  left: 56px;
+  top: 400px;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 35px;
+  letter-spacing: 0.1em;
 }
