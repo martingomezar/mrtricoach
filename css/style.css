@@ -16,7 +16,12 @@ body {
 div .container-fluid {
   margin: 0;
 }
-
+/* VARIABLES */
+:root {
+  --font-primario: "Barlow", sans-serif;
+  --color-primario: #26e573;
+}
+/* VARIABLES */
 /* NAVBAR */
 
 .navbar {
@@ -80,10 +85,9 @@ div .container-fluid {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-
 }
 
-.inicioTitulo {  
+.inicioTitulo {
   width: 60vw;
   font-weight: 900;
   font-size: 7vw;
@@ -95,7 +99,7 @@ div .container-fluid {
 
 .inicioSubTitulo {
   width: 60vw;
-  font-family: 'Barlow', sans-serif !important; 
+  font-family: "Barlow", sans-serif !important;
   font-weight: 500;
   font-size: 3vw;
   line-height: 52px;
@@ -127,44 +131,51 @@ div .container-fluid {
   height: 98vh;
 }
 
+.leftContainer {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding-left: 3em;
+}
+
 .metodoleftTitle {
-  position: absolute
-  width: 209px;
-  height: 90px;
-  left: 57px;
-  top:200rem;
+  width: 25vw;
   font-style: normal;
   font-weight: 900;
-  font-size: 38px;
-  line-height: 45px;
+  font-size: 3em;
+  line-height: 1.5em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  padding-top: 1em;
 }
+
 .metodoleftTextOne {
-  width: 300px;
-  height: 90px;
-  left: 57px;
-  top: 4rem;
-  font-family: Roboto;
+  width: 30vw;
+  font-family: "Barlow", sans-serif !important;
   font-style: normal;
   font-weight: 400;
-  font-size: 0.8rem;
-  line-height: 45px;
+  font-size: 1.5em;
+  line-height: 1.7em;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
+  padding-top: 1em;
 }
 
 .metodoleftTextTwo {
-  width: 405px;
-  height: 600px;
-  left: 56px;
-  top: 20rem;
-  font-family: Barlow;
+  width: 30vw;
+  font-family: "Barlow", sans-serif !important;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 35px;
+  font-size: 1em;
+  line-height: 2em;
   letter-spacing: 0.1em;
+  padding-top: 1em;
+}
+
+.metodoleftTextOne span,
+.metodoleftTextTwo span {
+  color: #26e673;
+  font-weight: 600;
 }
 
 /* COACH */
@@ -174,10 +185,8 @@ div .container-fluid {
 }
 
 .coachLeftTitle {
+  font-family: "Barlow", sans-serif !important;
   width: 20rem;
-  height: 21px;
-  left: 133px;
-  top: 487px;
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.1em;
@@ -232,9 +241,29 @@ div .container-fluid {
 .coachMR {
   font-weight: bold;
 }
+/* Testimonios */
+#testimonios {
+  height: 100vh;
+}
+.carousel-caption {
+  display: flex !important;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  right: 0%;
+  bottom: 0;
+  left: 0%;
+  padding-top: 0;
+  padding-bottom: 0;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
 
-/* TESTIMONIOS */
-.bg-overlayTestimonios {
-  height: 98vh;
-  background-image: url("https://raw.githubusercontent.com/martingomezar/mrtricoach/main/assets/01paolocandelo53B17GiIhTAunsplash.jpg");
+/* Contacto */
+#contacto {
+  height: 120vh;
+  display: flex;
+  align-items: center;
 }
