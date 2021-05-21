@@ -254,6 +254,10 @@ div .container-fluid {
   height: auto;
   overflow: hidden;
 }
+.carousel-item img{
+  height: 100vh;
+  object-fit: cover;
+}
 .carousel-caption{
   display: flex !important;
   flex-direction: column;
@@ -283,6 +287,32 @@ div .container-fluid {
   font-size: 1.5vw;
   text-align: center;
   text-transform: uppercase;
+}
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: whitesmoke;
+  background-clip: padding-box;
+  border: 10px solid transparent;
+  opacity: .5;
+  transition: opacity .6s ease;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: white;
 }
 /* Testimonios */
 /* Contacto */
