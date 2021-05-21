@@ -79,7 +79,8 @@ div .container-fluid {
 /* INICIO */
 
 .bg-overlay {
-  height: 98vh;
+  min-height: 99vh;
+  height: auto;
   background-image: url("https://raw.githubusercontent.com/martingomezar/mrtricoach/main/assets/01paolocandelo53B17GiIhTAunsplash.jpg");
   display: flex;
   flex-flow: column;
@@ -128,7 +129,8 @@ div .container-fluid {
 .bg-metodo {
   padding: 0px;
   margin: 0px;
-  height: 98vh;
+  min-height: 99vh;
+  height: auto;
 }
 
 .leftContainer {
@@ -181,13 +183,23 @@ div .container-fluid {
 /* COACH */
 
 .bg-coach {
-  height: 98vh;
+  min-height: 99vh;
+  height: auto;
+  display: flex;
+}
+
+.coachLeft {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding-left: 3em;
 }
 
 .coachLeftTitle {
   font-family: "Barlow", sans-serif !important;
   width: 20rem;
-  line-height: 23px;
+  line-height: 1.5em;
   text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -195,25 +207,30 @@ div .container-fluid {
 }
 
 .coachLeftParrafo {
-  width: 315px;
-  height: 102px;
-  left: 60px;
-  top: 525px;
-  font-size: 18px;
-  line-height: 22px;
+  width: 20em;
+  font-size: 1em;
+  line-height: 1.5em;
   text-align: center;
   letter-spacing: 0.1em;
 }
 
 .coachLeftImage {
-  width: 342px;
-  height: 343px;
-  left: 59px;
-  top: 117px;
+  width: 20em;
+  height: 20em;
   box-shadow: inset 0px 0px 5px 10px #0e0e0e;
   border-radius: 182px;
 }
 
+.coachRight {
+  width: 30vw;
+  font-family: "Barlow", sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1.7em;
+  letter-spacing: 0.1em;
+  padding-top: 1em;
+}
 .coachRightTitle {
   width: 182px;
   height: 35px;
@@ -225,21 +242,21 @@ div .container-fluid {
   text-transform: uppercase;
 }
 
+.coachRightTitle span{
+  font-weight: bolder;
+}
+
 .coachRightLine {
-  width: 740px;
-  height: 364px;
-  left: 483px;
-  top: 201px;
-  font-family: Barlow;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 26px;
+  width: 60vw;
+  font-family: "Barlow", sans-serif !important;
+  font-weight:100;
+  font-size: 1.5empx;
+  line-height: 1.5empx;
   letter-spacing: 0.1em;
 }
 
-.coachMR {
-  font-weight: bold;
+.coachRightLine span{
+  font-weight: bolder;
 }
 
 /*ROW CORRECCION*/
@@ -250,11 +267,11 @@ div .container-fluid {
 
 /* En PROCESO */
 /* Testimonios */
-#testimonios{
+#testimonios {
   height: auto;
   overflow: hidden;
 }
-.carousel-caption{
+.carousel-caption {
   display: flex !important;
   flex-direction: column;
   width: 65%;
@@ -270,14 +287,14 @@ div .container-fluid {
   color: #fff;
   text-align: center;
 }
-.carousel-caption h5{
+.carousel-caption h5 {
   font-family: var(--font-primario);
   font-style: italic;
   font-weight: 500;
   font-size: 2.5vw;
   text-align: center;
 }
-.carousel-caption p{
+.carousel-caption p {
   font-style: normal;
   font-weight: bold;
   font-size: 1.5vw;
@@ -286,19 +303,19 @@ div .container-fluid {
 }
 /* Testimonios */
 /* Contacto */
-#contacto{
+#contacto {
   min-height: 120vh;
   height: auto;
   display: flex;
   align-items: center;
   overflow: hidden;
 }
-.form-label{
+.form-label {
   font-family: var(--font-primario) !important;
   font-weight: 500;
   font-size: 24px;
 }
-.form-control{
+.form-control {
   font-size: 2rem;
   color: #f8f8f8;
   background-color: #0e0e0e;
@@ -311,30 +328,32 @@ div .container-fluid {
   -o-border-radius: 0%;
   resize: none;
 }
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
-input[type=number] { -moz-appearance:textfield; }
-.form-control:focus{
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.form-control:focus {
   background-color: inherit;
   box-shadow: none;
   color: var(--color-primario);
   border-color: var(--color-primario);
 }
-#textarea{
+#textarea {
   height: 150px;
 }
-.form-control:hover{
+.form-control:hover {
   border-color: var(--color-primario);
 }
-.btn-formulario-container{
+.btn-formulario-container {
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
-.btn-form{
+.btn-form {
   background-color: var(--color-primario);
   border-color: var(--color-primario);
   font-size: 30px;
@@ -349,7 +368,7 @@ input[type=number] { -moz-appearance:textfield; }
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-.btn-form:hover{
+.btn-form:hover {
   background-color: var(--color-primario);
   border-color: var(--color-primario);
   font-size: 30px;
@@ -363,7 +382,7 @@ input[type=number] { -moz-appearance:textfield; }
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-.title-contacto{
+.title-contacto {
   margin-left: 20px;
   font-weight: 900;
   font-size: 38px;
