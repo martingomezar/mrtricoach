@@ -186,6 +186,7 @@ div .container-fluid {
   min-height: 99vh;
   height: auto;
   display: flex;
+  justify-content: space-between;
 }
 
 .coachLeft {
@@ -198,20 +199,21 @@ div .container-fluid {
 
 .coachLeftTitle {
   font-family: "Barlow", sans-serif !important;
-  width: 20rem;
   line-height: 1.5em;
   text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #26e673;
+  padding: 1em;
 }
 
 .coachLeftParrafo {
-  width: 20em;
+  font-family: "Barlow", sans-serif !important;
   font-size: 1em;
   line-height: 1.5em;
   text-align: center;
   letter-spacing: 0.1em;
+  padding: 1em;
 }
 
 .coachLeftImage {
@@ -222,40 +224,27 @@ div .container-fluid {
 }
 
 .coachRight {
-  width: 30vw;
-  font-family: "Barlow", sans-serif !important;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.5em;
-  line-height: 1.7em;
-  letter-spacing: 0.1em;
-  padding-top: 1em;
+  padding: 3em;
 }
 .coachRightTitle {
-  width: 182px;
-  height: 35px;
-  left: 481px;
-  top: 142px;
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 2em;
+  line-height: 2em;
   letter-spacing: -0.1em;
   text-transform: uppercase;
 }
 
-.coachRightTitle span{
+.coachRightTitle span {
   font-weight: bolder;
 }
 
 .coachRightLine {
-  width: 60vw;
   font-family: "Barlow", sans-serif !important;
-  font-weight:100;
-  font-size: 1.5empx;
-  line-height: 1.5empx;
+  font-size: 1em;
+  line-height: 2em;
   letter-spacing: 0.1em;
 }
 
-.coachRightLine span{
+.coachRightLine span {
   font-weight: bolder;
 }
 
@@ -271,15 +260,7 @@ div .container-fluid {
   height: auto;
   overflow: hidden;
 }
-<<<<<<< HEAD
 .carousel-caption {
-=======
-.carousel-item img{
-  height: 100vh;
-  object-fit: cover;
-}
-.carousel-caption{
->>>>>>> a33c6e47a13910459b2c4532aad652439fe3b4fa
   display: flex !important;
   flex-direction: column;
   width: 65%;
@@ -323,8 +304,8 @@ div .container-fluid {
   background-color: whitesmoke;
   background-clip: padding-box;
   border: 10px solid transparent;
-  opacity: .5;
-  transition: opacity .6s ease;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
