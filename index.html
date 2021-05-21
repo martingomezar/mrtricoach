@@ -26,7 +26,7 @@
 <body>
 
     <!-- NavBar -->
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand">
         <div class="left">
             <a class="navbar-brand navbarLogo" href="#"><span>MR</span> TRI COACH</a>
             <img class="isotipo" src="./assets/Isotipo.png">
@@ -39,15 +39,16 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link" aria-current="page" href="#">INICIO</a>
-                    <a class="nav-link" href="#">COACH</a>
-                    <a class="nav-link" href="#">TESTIMONIOS</a>
-                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">CONTACTO</a>
+                    <a class="nav-link" href="#metodo">METODO</a>
+                    <a class="nav-link" href="#coach">COACH</a>
+                    <a class="nav-link" href="#testimonios">TESTIMONIOS</a>
+                    <a class="nav-link" href="#contacto" tabindex="-1" aria-disabled="true">CONTACTO</a>
                 </div>
             </div>
         </form>
     </nav>
     <!-- Inicio -->
-    <div class=" container-fluid bg-overlay">
+    <section id="inicio" class=" container-fluid bg-overlay">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
             class="bi bi-facebook facebook" viewBox="0 0 16 16">
             <path
@@ -64,17 +65,17 @@
         <div class="inicioSubTitulo">
             Entrenamiento personalizado para atletas y deportistas
         </div>
-    </div>
+    </section>
 
-    <!-- Coach -->
-    <div class="container-fluid row coach">
+    <!-- Metodo -->
+    <section id="metodo" class="container-fluid row metodo">
         <div class="w-40 col-4">
-            <div class="leftTitle">NUESTRO METODO</div>
+            <div class="metodoleftTitle">NUESTRO METODO</div>
             <div class="line"></div>
-            <div class="leftTextOne">Entrenamiento personalizado enfocado en los objetivos de cada atleta.
+            <div class="metodoleftTextOne">Entrenamiento personalizado enfocado en los objetivos de cada atleta.
 
             </div>
-            <div class="leftTextTwo">Seguimiento a través de dos herramientas: Garmin Connect y Training Peaks. En
+            <div class="metodoleftTextTwo">Seguimiento a través de dos herramientas: Garmin Connect y Training Peaks. En
                 Training Peaks se cargan
                 semanalmente los entrenamientos que a la vez vinculados con Garmin Connect en forma automática
                 proporcionan un doble seguimiento y datos de control de la evolución.</div>
@@ -83,13 +84,39 @@
             <img class="img-fluid"
                 src="https://raw.githubusercontent.com/martingomezar/mrtricoach/main/assets/02-quino-al-gLnHYHYyD3c-unsplash.jpg">
         </div>
-    </div>
+    </section>
 
+    <!-- Coach -->
+    <section id="coach" class="container-fluid row coach">
+        <div class="w-30 col-4">
+            <img class="img-fluid coachLeftImage" src="assets/marcelo.jpg">
+            <h3 class="coachLeftTitle">MARCELO RAICES</h3>
+            <p class="coachLeftParrafo">Profesor Nacional de Edu. Física Profesor Nacional de Tenis Spinning®Instructor
+                Personal Trainer</p>
+        </div>
+        <div class="w70 col-8">
+            <div class="coachRightTitle"><span class="coachMR">MR</span>TRICOACH</div>
+            <div class="coachRightLine">Soy Marcelo y mi vida es la actividad física. Soy Profesor, Entrenador y
+                Deportista. Soy triatleta amateur en Age Group con 13 IM y 4 Half IM. También fui entre otras cosas:
+                corredor de carreras de aventura multidisciplina de larga distancia, jugador de Squash y corredor de
+                carreras de calle de 8 a 42 km. A lo largo de los años diseñando mi propio entrenamiento y el de otros,
+                fui considerando la importancia del entrenamiento personalizado. Cada cuerpo es distinto y cada persona
+                tiene objetivos distintos. En el 2015 creé <span class="coachMR">MR</span> TRI COACH para ayudar a
+                deportistas y atletas
+                a mejorar su
+                rendimiento y optimizar su tiempo con entrenamientos a su medida.</div>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
+        </div>
+
+        <!-- Testimonios -->
+        <section id="testimonios">Testimonios/section>
+            <!-- Contacto -->
+            <section id="contacto">Contacto</section>
+
+            <!-- Option 1: Bootstrap Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+                crossorigin="anonymous"></script>
 </body>
 
 </html>
