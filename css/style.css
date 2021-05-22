@@ -280,21 +280,19 @@ div .container-fluid {
   font-family: var(--font-primario);
   font-style: italic;
   font-weight: 500;
-  font-size: 2.5vw;
   text-align: center;
 }
 .carousel-caption p {
   font-style: normal;
   font-weight: bold;
-  font-size: 1.5vw;
   text-align: center;
   text-transform: uppercase;
 }
 .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
   flex: 0 1 auto;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   padding: 0;
   margin-right: 10px;
   margin-left: 10px;
@@ -311,6 +309,10 @@ div .container-fluid {
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
+}
+.carousel-item img{
+    height: 100vh;
+    object-fit: cover;
 }
 .carousel-indicators .active {
   opacity: 1;
