@@ -395,7 +395,7 @@ input[type="number"] {
   color: var(--color-primario);
   border-color: var(--color-primario);
 }
-#textarea {
+#mensaje {
   height: 150px;
 }
 .form-control:hover {
