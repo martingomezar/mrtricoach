@@ -33,7 +33,9 @@ div .container-fluid {
 }
 
 .leftNavbar {
-  padding-left: 5rem;
+  padding-left: 4rem;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .rightNavbar {
@@ -60,7 +62,7 @@ div .container-fluid {
   display: flex;
 }
 
-.navbar-expand .navbar-nav .nav-link {
+.navbar-expand-sm .navbar-nav .nav-link {
   padding-left: 1rem;
   color: white;
 }
@@ -195,6 +197,7 @@ div .container-fluid {
   height: auto;
   display: flex;
   justify-content: space-between;
+  padding-top: 4em;
 }
 
 .coachLeft {
@@ -447,6 +450,7 @@ input[type="number"] {
 
   .leftNavbar {
     padding-left: 1rem;
+    display: flex;
   }
 
   .rightNavbar {
@@ -459,15 +463,14 @@ input[type="number"] {
     text-transform: uppercase;
     color: white;
     padding: 0%;
-    padding-top: 8%;
     margin: 0%;
   }
 
   .isotipo {
-    width: 8rem;
-    height: 1.5rem;
+    width: 10rem;
+    height: 2em;
     left: 10rem;
-    top: 1.5rem;
+    top: 4em;
   }
 
   /* INICIO */
@@ -637,27 +640,4 @@ input[type="number"] {
 }
 
 @media (max-width: 580px) {
-  .leftNavbar {
-    display: flex;
-  }
-
-  .navbarLogo {
-    padding: 1%;
-    line-height: 4rem;
-    letter-spacing: -0.1em;
-    text-transform: uppercase;
-    color: white;
-    font-size: 3em;
-    font-weight: 200;
-  }
-
-  .isotipo {
-    padding: 1%;
-    width: 22rem;
-    height: 4rem;
-    }
-
-  .rightNavbar {
-    display: none !important;
-  }
 }
