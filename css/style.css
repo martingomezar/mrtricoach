@@ -84,7 +84,7 @@ div .container-fluid {
 .inicioContainer {
   min-height: 99vh;
   height: auto;
-  background-image: url("./assets/01paolocandelo53B17GiIhTAunsplash.webp");
+  background-image: url(../assets/01paolocandelo53B17GiIhTAunsplash.webp);
   display: flex;
   flex-flow: column;
   justify-content: center;
