@@ -452,7 +452,7 @@ input[type="number"] {
   padding: 2em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   /* Navbar */
 
   .leftNavbar {
@@ -648,16 +648,9 @@ input[type="number"] {
 
 @media (max-width: 580px) {
   /* Navbar */
-  .navbar{
+  .navbar {
     display: flex;
     flex-flow: column;
-  }
-  .leftNavbar {
-    padding-left: 1rem;
-  }
-
-  .rightNavbar {
-    padding-right: 1rem;
   }
 
   .navbarLogo {
@@ -676,5 +669,4 @@ input[type="number"] {
     left: 10rem;
     top: 4em;
   }
-
 }
