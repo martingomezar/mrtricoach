@@ -31,11 +31,11 @@ div .container-fluid {
   color: white;
 }
 
-.left {
+.leftNavbar {
   padding-left: 5rem;
 }
 
-.right {
+.rightNavbar {
   padding-right: 5rem;
 }
 
@@ -78,7 +78,7 @@ div .container-fluid {
 
 /* INICIO */
 
-.bg-overlay {
+.inicioContainer {
   min-height: 99vh;
   height: auto;
   background-image: url("https://raw.githubusercontent.com/martingomezar/mrtricoach/main/assets/01paolocandelo53B17GiIhTAunsplash.jpg");
@@ -108,7 +108,7 @@ div .container-fluid {
   padding-right: 10vw;
 }
 
-.instagram {
+.inicioInstagram {
   position: absolute;
   left: 4.25%;
   right: 23.22%;
@@ -116,7 +116,7 @@ div .container-fluid {
   bottom: 0%;
 }
 
-.facebook {
+.inicioFacebook {
   position: absolute;
   left: 4.25%;
   right: 94.08%;
@@ -126,14 +126,14 @@ div .container-fluid {
 
 /* METODO */
 
-.bg-metodo {
+.metodoContainer {
   padding: 0px;
   margin: 0px;
   min-height: 99vh;
   height: auto;
 }
 
-.leftContainer {
+.metodoLeft {
   display: flex;
   flex-flow: column;
   flex-wrap: nowrap;
@@ -141,7 +141,7 @@ div .container-fluid {
   padding-left: 3em;
 }
 
-.metodoleftTitle {
+.metodoLeftTitle {
   width: 25vw;
   font-style: normal;
   font-weight: 900;
@@ -152,7 +152,7 @@ div .container-fluid {
   padding-top: 1em;
 }
 
-.metodoleftTextOne {
+.metodoLeftTextOne {
   width: 30vw;
   font-family: "Barlow", sans-serif !important;
   font-style: normal;
@@ -163,7 +163,7 @@ div .container-fluid {
   padding-top: 1em;
 }
 
-.metodoleftTextTwo {
+.metodoLeftTextTwo {
   width: 30vw;
   font-family: "Barlow", sans-serif !important;
   font-style: normal;
@@ -174,15 +174,15 @@ div .container-fluid {
   padding-top: 1em;
 }
 
-.metodoleftTextOne span,
-.metodoleftTextTwo span {
+.metodoLeftTextOne span,
+.metodoLeftTextTwo span {
   color: #26e673;
   font-weight: 600;
 }
 
 /* COACH */
 
-.bg-coach {
+.coachContainer {
   min-height: 99vh;
   height: auto;
   display: flex;
@@ -228,6 +228,7 @@ div .container-fluid {
 }
 .coachRightTitle {
   font-size: 2em;
+  font-weight: 200;
   line-height: 2em;
   letter-spacing: -0.1em;
   text-transform: uppercase;
@@ -239,9 +240,12 @@ div .container-fluid {
 
 .coachRightLine {
   font-family: "Barlow", sans-serif !important;
+  font-style: normal;
+  font-weight: 500;
   font-size: 1em;
   line-height: 2em;
   letter-spacing: 0.1em;
+  padding-top: 1em;
 }
 
 .coachRightLine span {
@@ -423,3 +427,9 @@ input[type="number"] {
   text-transform: uppercase;
 }
 /* Contacto */
+
+/* Footer */
+
+.footerContainer{
+  padding: 2em;
+}
