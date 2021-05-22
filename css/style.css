@@ -134,6 +134,13 @@ div .container-fluid {
   bottom: 68.63%;
 }
 
+.inicioWhatsapp{
+  position:fixed;
+  right: 2%;  
+  bottom: 5%; 
+  z-index: 2;
+}
+
 /* METODO */
 
 .metodoContainer {
