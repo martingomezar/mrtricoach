@@ -161,26 +161,26 @@
                 <h2 class="title-contacto">¡Estemos en<br>
                     contacto!</h2>
                 <div class="col-md-12 col-lg-10">
-                    <form class="row g-5">
+                    <form class="row g-5" method="post" action="enviar2.php">
                         <div class="col-md-6 col-lg-5 g-5 container-content-form">
                             <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" required minlength="2">
+                            <input type="text" class="form-control" id="nombre" name="nombre" required minlength="2">
                         </div>
                         <div class="col-md-6 col-lg-5 g-5 container-content-form">
                             <label for="apellido" class="form-label">Apellido</label>
-                            <input type="text" class="form-control" id="apellido" required minlength="2">
+                            <input type="text" class="form-control" id="apellido" name="apellido" required minlength="2">
                         </div>
                         <div class="col-md-6 col-lg-5 g-5 container-content-form">
                             <label for="telefono" class="form-label">Teléfono</label>
-                            <input type="number" class="form-control" id="telefono" required>
+                            <input type="number" class="form-control" id="telefono" name="telefono" required>
                         </div>
                         <div class="col-md-6 col-lg-5 g-5 container-content-form">
                             <label for="mail" class="form-label">Mail</label>
-                            <input type="email" class="form-control" id="mail" required>
+                            <input type="email" class="form-control" id="mail" name="mail" required>
                         </div>
                         <div class="col-md-6 col-lg-5 g-5 container-content-form">
                             <label for="textarea" class="form-label">Dejanos un mensaje</label>
-                            <textarea class="form-control" id="textarea" rows="3" required minlength="5"
+                            <textarea class="form-control" id="textarea" name="mensaje" rows="3" required minlength="5"
                                 maxlength="180"></textarea>
                         </div>
                         <div class="col-md-6 col-lg-5 g-5 btn-formulario-container">
