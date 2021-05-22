@@ -22,6 +22,7 @@ div .container-fluid {
   --color-primario: #26e573;
 }
 /* VARIABLES */
+
 /* NAVBAR */
 
 .navbar {
@@ -106,6 +107,13 @@ div .container-fluid {
   line-height: 52px;
   color: #26e673;
   padding-right: 10vw;
+}
+
+.inicioSocial {
+  color: white;
+}
+.inicioSocial:hover {
+  color: #26e673;
 }
 
 .inicioInstagram {
@@ -314,9 +322,9 @@ div .container-fluid {
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
 }
-.carousel-item img{
-    height: 100vh;
-    object-fit: cover;
+.carousel-item img {
+  height: 100vh;
+  object-fit: cover;
 }
 .carousel-indicators .active {
   opacity: 1;
@@ -430,6 +438,226 @@ input[type="number"] {
 
 /* Footer */
 
-.footerContainer{
+.footerContainer {
   padding: 2em;
+}
+
+@media (max-width: 768px) {
+  /* Navbar */
+
+  .leftNavbar {
+    padding-left: 1rem;
+  }
+
+  .rightNavbar {
+    padding-right: 1rem;
+  }
+
+  .navbarLogo {
+    line-height: 2rem;
+    letter-spacing: -0.1em;
+    text-transform: uppercase;
+    color: white;
+    padding: 0%;
+    padding-top: 8%;
+    margin: 0%;
+  }
+
+  .isotipo {
+    width: 8rem;
+    height: 1.5rem;
+    left: 10rem;
+    top: 1.5rem;
+  }
+
+  /* INICIO */
+
+  .inicioContainer {
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+    height: auto;
+  }
+
+  .inicioTitulo {
+    width: 60vw;
+    font-weight: 900;
+    font-size: 8vw;
+    line-height: 110px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0px;
+  }
+
+  .inicioSubTitulo {
+    width: 60vw;
+    font-family: "Barlow", sans-serif !important;
+    font-weight: 500;
+    font-size: 3.5vw;
+    line-height: 2em;
+    color: #26e673;
+    padding-right: 10vw;
+  }
+
+  /* METODO */
+
+  .metodoImagen {
+    display: none;
+  }
+
+  .metodoContainer {
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+    height: auto;
+  }
+
+  .metodoLeft {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding-left: 3em;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .metodoLeftTitle {
+    width: 50vw;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3em;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding-top: 1em;
+  }
+
+  .metodoLeftTextOne {
+    width: 50vw;
+    font-family: "Barlow", sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 1.7em;
+    letter-spacing: 0.1em;
+    padding-top: 1em;
+  }
+
+  .metodoLeftTextTwo {
+    width: 50vw;
+    font-family: "Barlow", sans-serif !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 2em;
+    letter-spacing: 0.1em;
+    padding-top: 1em;
+  }
+
+  /* COACH */
+
+  .coachContainer {
+    padding: 0px;
+    padding-top: 5em;
+    margin: 0px;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .coachLeft {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .coachLeftImage {
+    width: 15em;
+    height: 15em;
+    box-shadow: inset 0px 0px 5px 10px #0e0e0e;
+    border-radius: 182px;
+  }
+
+  .coachLeftParrafo {
+    width: 50vw;
+  }
+
+  .coachRight {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 1em;
+    padding-left: 4em;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .coachRightTitle {
+    width: 50vw;
+    font-family: "Barlow", sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 1.7em;
+    letter-spacing: 0.1em;
+    padding-top: 1em;
+  }
+
+  .coachRightTitle span {
+    font-weight: bolder;
+  }
+
+  .coachRightLine {
+    width: 50vw;
+    font-family: "Barlow", sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.7em;
+    letter-spacing: 0.1em;
+    padding-top: 1em;
+  }
+
+  .coachRightLine span {
+    font-weight: bolder;
+  }
+
+  /* CONTACTO */
+
+  #contacto {
+    padding-top: 5em;
+  }
+}
+
+@media (max-width: 580px) {
+  .leftNavbar {
+    display: flex;
+  }
+
+  .navbarLogo {
+    padding: 1%;
+    line-height: 4rem;
+    letter-spacing: -0.1em;
+    text-transform: uppercase;
+    color: white;
+    font-size: 3em;
+    font-weight: 200;
+  }
+
+  .isotipo {
+    padding: 1%;
+    width: 22rem;
+    height: 4rem;
+    }
+
+  .rightNavbar {
+    display: none !important;
+  }
 }
