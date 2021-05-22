@@ -452,7 +452,10 @@ input[type="number"] {
   padding: 2em;
 }
 
-@media (max-width: 768px) {
+/* Tabet */
+
+@media (max-width: 992px) {
+
   /* Navbar */
 
   .leftNavbar {
