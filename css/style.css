@@ -286,7 +286,7 @@ div .container-fluid {
   display: flex !important;
   flex-direction: column;
   width: 65%;
-  height: 80%;
+  height: 80vh;
   right: 0%;
   bottom: 0;
   left: 0%;
@@ -297,6 +297,11 @@ div .container-fluid {
   align-items: center;
   color: #fff;
   text-align: center;
+  transform: translateY(95vh);
+  -webkit-transform: translateY(95vh);
+  -moz-transform: translateY(95vh);
+  -ms-transform: translateY(95vh);
+  -o-transform: translateY(95vh);
 }
 .carousel-caption h5 {
   font-family: var(--font-primario);
@@ -334,10 +339,7 @@ div .container-fluid {
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
 }
-.carousel-item img {
-  height: 100vh;
-  object-fit: cover;
-}
+
 .carousel-indicators .active {
   opacity: 1;
   background-color: white;
@@ -355,6 +357,10 @@ div .container-fluid {
   -moz-transform: scale(1.5);
   -ms-transform: scale(1.5);
   -o-transform: scale(1.5);
+}
+.img-fondo-carrousel{
+  height: 100vh;
+  object-fit: cover;
 }
 /* Testimonios */
 /* Contacto */
