@@ -149,14 +149,17 @@ div .container-fluid {
   margin: 0px;
   min-height: 99vh;
   height: auto;
+  display: flex;
+  align-content: center;
 }
 
 .metodoLeft {
   display: flex;
   flex-flow: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: column;
   padding-left: 3em;
+  padding-right: 1em;
 }
 
 .metodoLeftTitle {
@@ -198,6 +201,13 @@ div .container-fluid {
   font-weight: 600;
 }
 
+.metodoRight{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
+}
+
 /* COACH */
 
 .coachContainer {
@@ -214,6 +224,8 @@ div .container-fluid {
   flex-wrap: nowrap;
   flex-direction: column;
   padding-left: 3em;
+  justify-content: center;
+  align-items: center;
 }
 
 .coachLeftTitle {
