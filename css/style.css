@@ -136,8 +136,9 @@ div .container-fluid {
 
 .inicioWhatsapp {
   position: fixed;
-  right: 2%;
-  bottom: 5%;
+  width: 5%;
+  right: 4%;
+  bottom: 8%;
   z-index: 2;
 }
 
