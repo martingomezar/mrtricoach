@@ -172,6 +172,13 @@ div .container-fluid {
   padding-top: 1em;
 }
 
+.line {
+  height: 0.5em !important;
+  width: 20em !important;
+  background-color: white !important;
+  opacity: 1;
+}
+
 .metodoLeftTextOne {
   width: 30vw;
   font-family: "Barlow", sans-serif !important;
@@ -256,7 +263,12 @@ div .container-fluid {
 .coachRight {
   padding: 3em;
 }
-.coachRightTitle {
+
+.coachRightTitleOne {
+  display: none;
+}
+
+.coachRightTitleTwo {
   font-size: 2em;
   font-weight: 200;
   line-height: 2em;
@@ -264,7 +276,8 @@ div .container-fluid {
   text-transform: uppercase;
 }
 
-.coachRightTitle span {
+.coachRightTitleTwo span,
+.coachRightTitleOne span {
   font-weight: bolder;
 }
 
@@ -534,10 +547,6 @@ input[type="number"] {
 
   /* METODO */
 
-  .metodoImagen {
-    display: none;
-  }
-
   .metodoContainer {
     padding: 0px;
     margin: 0px;
@@ -697,42 +706,6 @@ input[type="number"] {
   /* CONTACTO */
 }
 
-@media (max-width: 580px) {
-  /* Navbar */
-  .navbar {
-    display: flex;
-    flex-flow: column;
-  }
-
-  .navbarLogo {
-    line-height: 3rem;
-    letter-spacing: -0.1em;
-    text-transform: uppercase;
-    color: white;
-    padding: 0%;
-    margin: 0%;
-    font-size: 2rem;
-  }
-
-  .isotipo {
-    width: 10rem;
-    height: 3em;
-    left: 10rem;
-    top: 4em;
-  }
-  /* TESTIMONIOS */
-  .carousel-caption h5 {
-    font-size: 22px;
-  }
-  .carousel-caption p {
-    font-size: 16px;
-  }
-  .carousel-caption {
-    width: 80%;
-  }
-  /* TESTIMONIOS */
-}
-
 /* Tablets */
 @media (max-width: 767.98px) {
 }
@@ -782,14 +755,15 @@ input[type="number"] {
     flex-flow: column;
     justify-content: center;
     align-items: stretch;
-    padding: 0px;
+    padding: 4em;
     margin: 0px;
     min-height: 100vh;
     height: auto;
+    min-height: 90vh;
   }
 
   .inicioTitulo {
-    width: 100vw;
+    width: 60vw;
     font-weight: 900;
     font-size: 10vw;
     line-height: 60px;
@@ -804,7 +778,6 @@ input[type="number"] {
     font-size: 4vw;
     line-height: 30px;
     color: #26e673;
-    
   }
 
   .inicioInstagram {
@@ -837,29 +810,27 @@ input[type="number"] {
     min-height: 99vh;
     height: auto;
     display: flex;
-    align-content: center;
+    flex-flow: column-reverse;
   }
 
   .metodoLeft {
     display: flex;
     flex-flow: column;
     flex-wrap: wrap;
-    flex-direction: column;
-    }
+    align-items: flex-start;
+  }
 
   .metodoLeftTitle {
-    width: 25vw;
     font-style: normal;
-    font-weight: 100;
-    font-size: 4em;
-    line-height: 1.5em;
+    font-weight: 900;
+    font-size: 3em;
+    line-height: 1em;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    padding-top: 2em;
   }
 
   .metodoLeftTextOne {
-    width: 30vw;
+    width: 55vw;
     font-family: "Barlow", sans-serif !important;
     font-style: normal;
     font-weight: 400;
@@ -870,11 +841,11 @@ input[type="number"] {
   }
 
   .metodoLeftTextTwo {
-    width: 30vw;
+    width: 55vw;
     font-family: "Barlow", sans-serif !important;
     font-style: normal;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 2em;
     letter-spacing: 0.1em;
     padding-top: 1em;
@@ -888,9 +859,10 @@ input[type="number"] {
 
   .metodoRight {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 1em;
+    justify-content: stretch;
+    align-content: stretch;
+    padding: 0;
+    margin: 0;
   }
 
   /* COACH */
@@ -942,12 +914,19 @@ input[type="number"] {
   .coachRight {
     padding: 3em;
   }
-  .coachRightTitle {
+
+  .coachRightTitleOne {
+    display: none;
     font-size: 2em;
     font-weight: 200;
     line-height: 2em;
     letter-spacing: -0.1em;
     text-transform: uppercase;
+    padding: 2em;
+  }
+
+  .coachRightTitleTwo {
+    display: none;
   }
 
   .coachRightTitle span {
@@ -955,6 +934,7 @@ input[type="number"] {
   }
 
   .coachRightLine {
+    width: 50vw;
     font-family: "Barlow", sans-serif !important;
     font-style: normal;
     font-weight: 500;
@@ -966,6 +946,7 @@ input[type="number"] {
 
   .coachRightLine span {
     font-weight: bolder;
+    color: #26e673;
   }
 
   /*ROW CORRECCION*/
