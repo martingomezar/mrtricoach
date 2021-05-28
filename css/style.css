@@ -708,6 +708,9 @@ input[type="number"] {
 
 /* Tablets */
 @media (max-width: 767.98px) {
+  #contacto {
+    padding-top: 2em;
+  }
 }
 
 /* CellPhones */
@@ -1136,7 +1139,7 @@ input[type="number"] {
   /* Contacto */
 
   #contacto {
-  padding-top: 2em;
+    padding-top: 2em;
   }
 
   /* Footer */
