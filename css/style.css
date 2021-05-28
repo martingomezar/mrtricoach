@@ -868,6 +868,8 @@ input[type="number"] {
   /* COACH */
 
   .coachContainer {
+    margin: 0px;
+    padding: 0px;
     min-height: 99vh;
     height: auto;
     display: flex;
@@ -911,18 +913,17 @@ input[type="number"] {
     border-radius: 20em;
   }
 
-  .coachRight {
-    padding: 3em;
+  .coachRight{
+    display: flex;
+    align-items:flex-start;
   }
-
   .coachRightTitleOne {
     display: none;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 200;
     line-height: 2em;
     letter-spacing: -0.1em;
     text-transform: uppercase;
-    padding: 2em;
   }
 
   .coachRightTitleTwo {
