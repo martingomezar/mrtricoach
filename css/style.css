@@ -913,9 +913,9 @@ input[type="number"] {
     border-radius: 20em;
   }
 
-  .coachRight{
+  .coachRight {
     display: flex;
-    align-items:flex-start;
+    align-items: flex-start;
   }
   .coachRightTitleOne {
     display: none;
@@ -1134,6 +1134,10 @@ input[type="number"] {
     text-transform: uppercase;
   }
   /* Contacto */
+
+  #contacto {
+  padding-top: 2em;
+  }
 
   /* Footer */
 
