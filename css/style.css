@@ -480,12 +480,6 @@ input[type="number"] {
   text-transform: uppercase;
 }
 
-.formCaptcha{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Footer */
 
 .footerContainer {
