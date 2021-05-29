@@ -628,6 +628,11 @@ input[type="number"] {
 @media (max-width: 767.98px) {
   /* Navbar */
 
+  .navbar {
+    display: flex;
+    flex-flow: nowrap;
+  }
+
   .leftNavbar {
     padding-left: 2rem;
     display: flex;
@@ -649,6 +654,9 @@ input[type="number"] {
     margin: 0%;
   }
 
+  .navbar-nav {
+    align-items: flex-end;
+  }
   /* INICIO */
 
   /* METODO */
@@ -702,6 +710,10 @@ input[type="number"] {
     top: 1.5rem;
   }
 
+  .navbar {
+    display: flex;
+    flex-flow: nowrap;
+  }
   /* INICIO */
 
   .inicioContainer {
@@ -794,11 +806,11 @@ input[type="number"] {
     padding-right: 0px;
   }
 
-  .navbar-dark .navbar-brand{
+  .navbar-dark .navbar-brand {
     font-size: 1.5em;
   }
 
-  .isotipo{
+  .isotipo {
     width: 40%;
     height: 15%;
   }
@@ -807,6 +819,4 @@ input[type="number"] {
     padding-left: 0px;
     padding-right: 0px;
   }
-
-  
 }
