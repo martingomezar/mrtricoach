@@ -796,7 +796,7 @@ input[type="number"] {
 @media (max-width: 510px) {
   .navbar {
     margin: 0px;
-    padding-left: 0px;
+    padding-left: 0.5em;
     padding-right: 0px;
     flex-wrap: nowrap;
   }
