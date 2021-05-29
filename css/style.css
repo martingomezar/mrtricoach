@@ -479,7 +479,11 @@ input[type="number"] {
   margin-bottom: 50px;
   text-transform: uppercase;
 }
-/* Contacto */
+
+.formCaptcha{
+  display: flex;
+  justify-content: center;
+}
 
 /* Footer */
 
