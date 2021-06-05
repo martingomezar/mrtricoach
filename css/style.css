@@ -41,6 +41,15 @@ div .container-fluid {
   padding-right: 4rem;
 }
 
+.menuResponsive, .closeMenuResponsive {
+  display: none;
+}
+
+.sidenavMenu,
+.closebtn {
+  display: none;
+}
+
 .navbarLogo {
   line-height: 2rem;
   letter-spacing: -0.1em;
@@ -627,20 +636,6 @@ input[type="number"] {
 @media (max-width: 767.98px) {
   /* Navbar */
 
-  .navbar {
-    display: flex;
-    flex-flow: nowrap;
-  }
-
-  .leftNavbar {
-    padding-left: 2rem;
-    display: flex;
-  }
-
-  .rightNavbar {
-    padding-right: 1rem;
-  }
-
   .navbar-brand {
     margin-right: 0rem !important;
   }
@@ -656,6 +651,24 @@ input[type="number"] {
   .navbar-nav {
     align-items: flex-end;
   }
+
+  .menuResponsive {
+    display: block;
+  }
+
+  .navbar-nav {
+    display: none;
+    
+  }
+
+  .menuHamburguesa, .closeMenuResponsive {
+    color: white !important;
+    background-color: black;
+    border: none;
+  }
+
+  
+
   /* INICIO */
 
   /* METODO */
@@ -713,6 +726,48 @@ input[type="number"] {
     display: flex;
     flex-flow: nowrap;
   }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+
   /* INICIO */
 
   .inicioContainer {
@@ -792,7 +847,7 @@ input[type="number"] {
   /* Footer */
 }
 
-@media (max-width: 510px) {
+@media (max-width: 576px) {
   .navbar {
     margin: 0px;
     padding-left: 0.5em;
