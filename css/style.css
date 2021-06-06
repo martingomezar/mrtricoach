@@ -745,12 +745,18 @@ input[type="number"] {
     background-color: white !important;
     opacity: 1;
   }
+  .carousel-caption h5 {
+    font-size: 20px;
+  }
+  .carousel-caption p {
+    font-size: 18px;
+  }
 }
 
 /* CONTACTO */
 .formflex {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 #contacto {
@@ -930,5 +936,11 @@ input[type="number"] {
   .rightNavbar {
     padding-left: 0px;
     padding-right: 0px;
+  }
+  .carousel-caption h5 {
+    font-size: 20px;
+  }
+  .carousel-caption p {
+    font-size: 18px;
   }
 }
