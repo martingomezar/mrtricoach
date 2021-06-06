@@ -747,6 +747,14 @@ input[type="number"] {
   }
 }
 
+/* CONTACTO */
+
+#contacto {
+  padding-top: 2em;
+  margin-bottom: 4em;
+}
+
+
 /* CellPhones */
 
 @media (max-width: 575.98px) {
