@@ -1,18 +1,26 @@
 function openRes() {
-  let div = document.querySelector(".navbar-nav");
-  div.setAttribute("style", "display: block");
-  let divtwo = document.querySelector(".closeMenuResponsive");
-  divtwo.setAttribute("style", "display: block"); 
-  let divthree = document.querySelector(".menuResponsive");
-  divthree.setAttribute("style", "display: none"); 
+  document.querySelector(".navbar-nav").style.display="block";
+  document.querySelector(".closeMenuResponsive").style.display="block";
+  document.querySelector(".menuResponsive").style.display="none";
+  document.querySelector(".isotipo").style.display="none";
+  document.querySelector(".navbarLogo").style.display="none";  
+  document.querySelector(".navbar").style.flexDirection="column";
 }
 
 function closeRes(){
-  let div = document.querySelector(".navbar-nav");
-  div.setAttribute("style", "display: none");
-  let divtwo = document.querySelector(".closeMenuResponsive");
-  divtwo.setAttribute("style", "display: none"); 
-  let divthree = document.querySelector(".menuResponsive");
-  divthree.setAttribute("style", "display: block"); 
+  document.querySelector(".navbar-nav").style.display="none";
+  document.querySelector(".closeMenuResponsive").style.display="none";
+  document.querySelector(".menuResponsive").style.display="block";
+  document.querySelector(".isotipo").style.display="block";
+  document.querySelector(".navbarLogo").style.display="block";  
+  document.querySelector(".navbar").style.flexDirection="row";
+}
 
+function closeSide(){
+  document.querySelector(".navbar-nav").style.display="none";
+  document.querySelector(".closeMenuResponsive").style.display="none";
+  document.querySelector(".menuResponsive").style.display="block";
+  document.querySelector(".isotipo").style.display="block";
+  document.querySelector(".navbarLogo").style.display="block";  
+  document.querySelector(".navbar").style.flexDirection="row";
 }
