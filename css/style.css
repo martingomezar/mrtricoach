@@ -481,8 +481,12 @@ input[type="number"] {
   text-transform: uppercase;
 }
 
+.chaptaButton{
+  display: flex;
+  
+}
 .chapta{
-  border-radius: 25px;
+  border-radius: 2em;
 }
 
 /* Footer */
