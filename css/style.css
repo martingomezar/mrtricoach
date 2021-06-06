@@ -483,10 +483,14 @@ input[type="number"] {
 
 .chaptaButton{
   display: flex;
-  
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 .chapta{
   border-radius: 2em;
+  margin: 1em;
 }
 
 /* Footer */
