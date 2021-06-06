@@ -481,14 +481,14 @@ input[type="number"] {
   text-transform: uppercase;
 }
 
-.chaptaButton{
+.chaptaButton {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-end;
 }
-.chapta{
+.chapta {
   border-radius: 2em;
   margin-bottom: 1em;
 }
@@ -748,12 +748,15 @@ input[type="number"] {
 }
 
 /* CONTACTO */
+.formflex {
+  display: flex;
+  flex-direction: column;
+}
 
 #contacto {
   padding-top: 2em;
   margin-bottom: 4em;
 }
-
 
 /* CellPhones */
 
