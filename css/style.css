@@ -657,6 +657,11 @@ input[type="number"] {
     margin: 0%;
   }
 
+  .isotipoMenu {
+    width: 8rem;
+    height: 2rem;
+  }
+
   .menuResponsive {
     display: block;
   }
@@ -668,7 +673,7 @@ input[type="number"] {
   .nav-item {
     position: relative;
     cursor: pointer;
-    font-size: 2em;
+    font-size: 1em;
     padding: 15px 30px;
     transition: all 250ms;
     background-color: black;
