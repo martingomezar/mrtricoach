@@ -679,18 +679,20 @@ input[type="number"] {
     background-color: black;
   }
 
-  .menuHamburguesa,
+  .menuHamburguesa {
+    color: white;
+    border: none;
+    background-color: transparent;
+  }
   .exis {
     color: white !important;
     background-color: black;
     border: none;
     right: 0px;
     opacity: 1;
-  }
-
-  .exis {
     font-size: 2em;
   }
+
   .btnRes {
     background: black;
     border: none;
