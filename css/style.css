@@ -1,5 +1,8 @@
 * {
   font-family: "Roboto", sans-serif !important;
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -11,6 +14,8 @@ body {
   margin: 0px;
   color: white;
   background-color: black;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 div .container-fluid {
@@ -22,66 +27,228 @@ div .container-fluid {
   --color-primario: #26e573;
 }
 
-/* NAVBAR */
-
-.navbar {
+/* newNAVBAR */
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+ol, ul {
+    padding-left: 0rem;
+}
+nav{
   display: flex;
   justify-content: space-around;
-  color: white;
+  align-items: center;
+  min-height: 10vh;
+  font-weight: 900;
+  position: sticky;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.8);
 }
-
-.leftNavbar {
-  padding-left: 4rem;
+.logo{
   display: flex;
-  justify-content: flex-start;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
 }
-
-.rightNavbar {
-  display: block;
-  justify-content: flex-end;
-  padding-right: 4rem;
+.logo-isotipo{
+  height: 38px;
 }
-
-.rightNavbarSmall {
-  display: none;
-}
-
-.navbarLogo {
-  line-height: 2rem;
-  letter-spacing: -0.1em;
+.logo-font{
+  color: #FFFFFF;
+  text-decoration: none;
+  letter-spacing: -0.1rem;
+  font-size: 28px;
   text-transform: uppercase;
-  color: white;
+  width: 180px;
 }
-
-.navbarLogo:hover {
-  text-decoration: none;
-  color: #26e673;
+.logo-font:hover{
+  color: #FFFFFF;
 }
-
-.navbar-brand span {
-  font-weight: bold;
+.logo-font span{
+  font-weight: 300;
 }
-
-.navbar-nav {
+.nav-links{
   display: flex;
+  justify-content: space-around;
+  width: 45%;
 }
 
-.navbar-expand .navbar-nav .nav-link {
-  padding-left: 1rem;
-  color: white;
+.nav-links li{
+  list-style: none;
 }
 
-.navbar-expand .navbar-nav .nav-link:hover {
+.nav-links a{
+  color: #FFFFFF;
   text-decoration: none;
-  color: #26e673;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  transition: color 0.3s;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -ms-transition: color 0.3s;
+  -o-transition: color 0.3s;
+}
+.nav-links a:hover{
+  color: #26E573;
 }
 
-.isotipo {
-  width: 14rem;
-  height: 2rem;
-  left: 15rem;
-  top: 1.5rem;
+/* Burger */
+
+.burger{
+  display: none;
+  cursor: pointer;
 }
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition:all 0.3s ease;
+  -webkit-transition:all 0.3s ease;
+  -moz-transition:all 0.3s ease;
+  -ms-transition:all 0.3s ease;
+  -o-transition:all 0.3s ease;
+}
+
+@media screen and (max-width:1400px) {
+  .nav-links{
+    width: 55%;
+  }
+  
+}
+@media screen and (max-width:1100px) {
+  .nav-links{
+    width: 60%;
+  }
+  .nav-links a{
+    font-size: 18px;
+  }
+  .logo-isotipo{
+    height: 34px;
+  }
+  .logo-font{
+    font-size: 24px;
+    width: 150px;
+  }
+}
+@media screen and (max-width:920px) {
+  .nav-links{
+    width: 60%;
+  }
+  .nav-links a{
+    font-size: 16px;
+  }
+  .logo-isotipo{
+    height: 30px;
+  }
+  .logo-font{
+    font-size: 20px;
+    width: 130px;
+  }
+}
+@media screen and (max-width:800px) {
+  .nav-links{
+    width: 60%;
+  }
+  .nav-links a{
+    font-size: 14px;
+  }
+  .logo-isotipo{
+    height: 28px;
+  }
+  .logo-font{
+    font-size: 18px;
+    width: 105px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  nav{
+    min-height: 10vh;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .logo-isotipo{
+    height: 28px;
+  }
+  .logo-font{
+    color: whitesmoke;
+    text-decoration: none;
+    letter-spacing: -0.1rem;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 130px;
+  }
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    top: 10vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-left: 0vw;
+    overflow: hidden;
+    width: 0%;
+    transition: width 0.5s ease-in, padding 0.5s ease-in;
+    -webkit-transition: width 0.5s ease-in, padding 0.5s ease-in;
+    -moz-transition: width 0.5s ease-in, padding 0.5s ease-in;
+    -ms-transition: width 0.5s ease-in, padding 0.5s ease-in;
+    -o-transition: width 0.5s ease-in, padding 0.5s ease-in;
+}
+.nav-links li{
+  opacity: 0;
+}
+.nav-links a{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+.burger{
+  display: block;
+}
+.nav-active{
+  width: 70%;
+  padding-left: 10vw;
+}
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    width: 0%;
+  }
+  to{
+    opacity: 1;
+    width: 70%;
+  }
+}
+}
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+  -webkit-transform: rotate(-45deg) translate(-5px,6px);
+  -moz-transform: rotate(-45deg) translate(-5px,6px);
+  -ms-transform: rotate(-45deg) translate(-5px,6px);
+  -o-transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+  -webkit-transform: rotate(45deg) translate(-5px,-6px);
+  -moz-transform: rotate(45deg) translate(-5px,-6px);
+  -ms-transform: rotate(45deg) translate(-5px,-6px);
+  -o-transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/* newNAVBAR */
 
 /* INICIO */
 
@@ -504,12 +671,6 @@ input[type="number"] {
 @media (max-width: 991.98px) {
   /* Navbar */
 
-  .isotipo {
-    width: 10rem;
-    height: 2em;
-    left: 10rem;
-    top: 4em;
-  }
 
   /* INICIO */
 
@@ -640,62 +801,6 @@ input[type="number"] {
 @media (max-width: 767.98px) {
   /* Navbar */
 
-  .rightNavbarLarge {
-    display: none;
-  }
-
-  .rightNavbarSmall {
-    display: block;
-  }
-
-  .closeMenuResponsive {
-    display: none;
-    background-color: #000000;
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-  }
-
-  .navbar-brand {
-    margin-right: 0rem !important;
-  }
-
-  .navbarLogo {
-    line-height: 2rem;
-    letter-spacing: -0.1em;
-    text-transform: uppercase;
-    color: white;
-    padding: 0%;
-    margin: 0%;
-  }
-
-  .isotipoMenu {
-    width: 8rem;
-    height: 2rem;
-  }
-
-  .menuResponsive {
-    display: block;
-  }
-
-  .navbar-nav {
-    width: 100%;
-  }
-
-  .nav-item {
-    position: relative;
-    cursor: pointer;
-    font-size: 1em;
-    padding: 15px 30px;
-    transition: all 250ms;
-    background-color: black;
-  }
-
-  .menuHamburguesa {
-    color: white;
-    border: none;
-    background-color: transparent;
-  }
   .exis {
     color: white !important;
     background-color: black;
@@ -709,10 +814,7 @@ input[type="number"] {
     background: black;
     border: none;
   }
-  .rightNavbar {
-    position: initial;
-    background-color: black;
-  }
+
 
   /* INICIO */
 
@@ -769,72 +871,6 @@ input[type="number"] {
 @media (max-width: 575.98px) {
   /* NAVBAR */
 
-  .navbarLogo {
-    line-height: 2rem;
-    letter-spacing: -0.1em;
-    text-transform: uppercase;
-    color: white;
-    font-size: 2.5em;
-    font-weight: 100;
-  }
-
-  .isotipo {
-    width: 10rem;
-    height: 2rem;
-    left: 15rem;
-    top: 1.5rem;
-  }
-
-  .isotipoMenu {
-    width: 8rem;
-    height: 2rem;
-  }
-
-  .navbar {
-    display: flex;
-    flex-flow: nowrap;
-  }
-
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
 
   /* INICIO */
 
@@ -912,31 +948,7 @@ input[type="number"] {
 }
 
 @media (max-width: 576px) {
-  .navbar {
-    margin: 0px;
-    padding-left: 0.5em;
-    padding-right: 0px;
-    flex-wrap: nowrap;
-  }
 
-  .leftNavbar {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .navbar-dark .navbar-brand {
-    font-size: 1.5em;
-  }
-
-  .isotipo {
-    width: 40%;
-    height: 15%;
-  }
-
-  .rightNavbar {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
   .carousel-caption h5 {
     font-size: 20px;
   }

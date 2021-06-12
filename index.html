@@ -21,75 +21,31 @@
 
 <body>
 
-    <!-- NavBar -->
-
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-        <div class="navbarFlex leftNavbar">
-            <a class="navbar-brand navbarLogo" href="#inicio"><span>MR</span> TRI COACH</a>
-            <img class="isotipo" src="./assets/Isotipo.png">
-        </div>
-        <div class="rightNavbarLarge">
-            <ul class="navbar-nav noResponsive">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#inicio">INICIO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#metodo">METODO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#coach">COACH</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#testimonios">TESTIMONIOS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contacto" tabindex="-1" aria-disabled="true">CONTACTO</a>
-                </li>
-            </ul>
-        </div>
-        <div class="rightNavbarSmall">
-            <span class="menuResponsive">
-                <button class="menuHamburguesa" id="btnmenu" onclick="openRes()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                        class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                    </svg>
-                </button>
-            </span>
-            <div class="closeMenuResponsive">
-                <span>
-                    <button class="exis" onclick="closeRes()">X
-                    </button>
-                </span>
-                <a class="navbar-brand navbarLogo" href="#inicio"><span>MR</span> TRI COACH</a>
-                <img class="isotipoMenu" src="./assets/Isotipo.png">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <button class="btnRes" onclick="closeRes()"><a class="nav-link" aria-current="page"
-                                href="#inicio">INICIO</a></button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btnRes" onclick="closeRes()"><a class="nav-link" href="#metodo">METODO</a></button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btnRes" onclick="closeRes()"><a class="nav-link" href="#coach">COACH</a></button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btnRes" onclick="closeRes()"><a class="nav-link" href="#testimonios">TESTIMONIOS</a></button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btnRes" onclick="closeRes()"><a class="nav-link" href="#contacto" tabindex="-1"
-                                aria-disabled="true">CONTACTO</a></button>
-                    </li>
-                </ul>
+    <!-- NewNavBar -->
+        <nav>
+            <div class="logo">
+                <a href="#inicio" class="logo-font">
+                    MR<span> TRI COACH</span>
+                </a>
+                <img class="logo-isotipo" src="./assets/Isotipo.png">
             </div>
-        </div>
-        </div>
-    </nav>
+            <ul class="nav-links">
+                <li><a class="inicio" href="#inicio">INICIO</a></li>
+                <li><a class="metodo" href="#metodo">MÉTODO</a></li>
+                <li><a class="coach" href="#coach">COACH</a></li>
+                <li><a class="testimonios" href="#testimonios">TESTIMONIOS</a></li>
+                <li><a class="contacto" href="#contacto">CONTACTO</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    <!-- NewNavBar -->
 
     <!-- Inicio -->
-    <section id="inicio" class=" container-fluid inicioContainer">
+    <section id="inicio" class="container-fluid inicioContainer section">
         <a href="https://www.facebook.com/MR.TRI.COACH/" target="_blank" class="inicioSocial"><svg
                 xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                 class="bi bi-facebook inicioFacebook" viewBox="0 0 16 16">
@@ -112,7 +68,7 @@
     </section>
 
     <!-- Metodo -->
-    <section id="metodo" class="container-fluid row metodoContainer">
+    <section id="metodo" class="container-fluid row metodoContainer section">
         <div class="col-lg-4 metodoLeft">
             <h3 class="metodoLeftTitle">NUESTRO METODO</h3>
             <hr class="metodoLine">
@@ -132,8 +88,7 @@
     </section>
 
     <!-- Coach -->
-    <section id="coach" class="container-fluid row coachContainer">
-
+    <section id="coach" class="container-fluid row coachContainer section">
         <div class="col-lg-5 coachLeft">
             <div class="coachRightTitleOne"><span>MR</span>TRI COACH</div>
             <img class="img-fluid coachLeftImage" src="./assets/03_20191130_114500.webp">
@@ -159,9 +114,9 @@
                     rendimiento y optimizar su tiempo con entrenamientos a su medida.</span></p>
             </p>
         </div>
-
+    </section>
         <!-- Testimonios -->
-        <section id="testimonios">
+        <section id="testimonios" class="section">
             <article>
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -209,7 +164,7 @@
             </article>
         </section>
         <!-- Contacto -->
-        <section id="contacto">
+        <section id="contacto" class="section">
             <article class="container-fluid">
                 <h2 class="title-contacto">¡Estemos en<br>
                     contacto!</h2>
