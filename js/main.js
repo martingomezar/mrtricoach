@@ -28,7 +28,7 @@ const verifyVisibility = (entries)=>{
     }
 }
 const options = {
-    rootMargin: "-200px",
+    rootMargin: "-150px",
     treshold: 0.1
 }
 const observer = new IntersectionObserver(verifyVisibility, options)
