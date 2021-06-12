@@ -19,7 +19,6 @@ const sections = document.querySelectorAll(".section");
 const verifyVisibility = (entries)=>{
     for (const entry of entries) {
         if(entry.isIntersecting){
-            console.log("se esta viendo: ", entry.target.id);
             const menu = document.querySelector(`.${entry.target.id}`);
             menu.style.color = "#26E573";
           } else {
