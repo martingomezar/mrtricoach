@@ -32,7 +32,7 @@ let mqw;
 if (anchoTotal > 768){
   mqw = "-400px"
 } else{
-  mqw = "-200px"
+  mqw = "-150px"
 }
 const options = {
     rootMargin: mqw,
