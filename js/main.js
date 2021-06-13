@@ -29,11 +29,13 @@ const verifyVisibility = (entries)=>{
 }
 const anchoTotal = screen.width;
 let mqw;
-if (anchoTotal > 768){
-  mqw = "-400px"
-} else{
-  mqw = "-150px"
+if (anchoTotal < 900){
+  mqw = "-100px";
 }
+if (anchoTotal > 900){
+  mqw = "-300px";
+}
+
 const options = {
     rootMargin: mqw,
     treshold: 0.5
