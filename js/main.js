@@ -23,7 +23,7 @@ const verifyVisibility = (entries)=>{
             menu.style.color = "#26E573";
           } else {
             const menu = document.querySelector(`.${entry.target.id}`);
-            menu.style.color = "#FFFFFF";
+            menu.style.color = "";
         }
     }
 }
