@@ -30,7 +30,7 @@ const verifyVisibility = (entries)=>{
 const anchoTotal = screen.width;
 let mqw;
 if (anchoTotal < 900){
-  mqw = "-100px";
+  mqw = "-150px";
 }
 if (anchoTotal > 900){
   mqw = "-300px";
