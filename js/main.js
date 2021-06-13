@@ -27,8 +27,15 @@ const verifyVisibility = (entries)=>{
         }
     }
 }
+const anchoTotal = screen.width;
+let mqw;
+if (anchoTotal > 768){
+  mqw = "-400px"
+} else{
+  mqw = "-200px"
+}
 const options = {
-    rootMargin: "-200px",
+    rootMargin: mqw,
     treshold: 0.5
 }
 const observer = new IntersectionObserver(verifyVisibility, options)
