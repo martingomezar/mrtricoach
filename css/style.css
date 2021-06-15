@@ -551,26 +551,6 @@ nav{
   font-size: 24px;
 }
 .carousel-indicators [data-bs-target] {
-  box-sizing: content-box;
-  flex: 0 1 auto;
-  width: 15px;
-  height: 15px;
-  padding: 0;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-bottom: 20px;
-  text-indent: -999px;
-  cursor: pointer;
-  background-color: whitesmoke;
-  background-clip: padding-box;
-  border: 10px solid transparent;
-  opacity: 0.5;
-  transition: opacity 0.6s ease;
-  border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  -ms-border-radius: 100%;
-  -o-border-radius: 100%;
 }
 
 .carousel-indicators .active {
@@ -1006,6 +986,9 @@ input[type="number"] {
     padding-left: 1em;
     padding-right: 1em;
   }
+  .metodoLeftTitle{
+    font-size: 10vw;
+  }
   /* COACH */
 
   .coachLeftParrafo {
@@ -1027,7 +1010,14 @@ input[type="number"] {
     width: 90vw;
   }
   /*ROW CORRECCION*/
+  /* Testimonios */
+  .none-mb-carousel{
+    display: none;
+  }
   /* Contacto */
+  .title-contacto{
+    font-size: 10vw;
+  }
   /* Contacto */
 
   /* Footer */
