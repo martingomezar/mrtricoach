@@ -550,8 +550,7 @@ nav{
   text-transform: uppercase;
   font-size: 24px;
 }
-.carousel-indicators [data-bs-target] {
-}
+
 
 .carousel-indicators .active {
   opacity: 1;
@@ -933,14 +932,14 @@ input[type="number"] {
   .inicioInstagram {
     position: absolute;
     left: 10%;
-    top: 15%;
+    top: 12%;
     bottom: 0%;
   }
 
   .inicioFacebook {
     position: absolute;
     left: 22%;
-    top: 15%;
+    top: 12%;
     bottom: 0%;
   }
 
