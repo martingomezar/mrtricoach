@@ -943,6 +943,7 @@ input[type="number"] {
     font-size: 5vw;
     line-height: 30px;
     color: #26e673;
+    padding-bottom: 10vh;
   }
 
   .inicioInstagram {
