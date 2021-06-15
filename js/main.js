@@ -33,6 +33,9 @@ if (anchoTotal < 900){
   mqw = "-150px";
 }
 if (anchoTotal > 900){
+  mqw = "-200px";
+}
+if (anchoTotal > 1400){
   mqw = "-300px";
 }
 

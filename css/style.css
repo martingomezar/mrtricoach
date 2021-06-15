@@ -221,6 +221,11 @@ nav{
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
 }
+.redes-nav{
+  justify-self: flex-end;
+  align-self: flex-start;
+  margin-top: 15rem;
+}
 .nav-links a{
   color: rgb(255, 255, 255);
   font-size: 20px;
@@ -278,6 +283,7 @@ nav{
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
 }
 
 .inicioTitulo {
