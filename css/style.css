@@ -468,10 +468,12 @@ nav{
   text-transform: uppercase;
 }
 
+.coachRightTitleOne{
+  display: none;
+}
 .coachRightTitleTwo span,
 .coachRightTitleOne span {
   font-weight: bolder;
-  display: none;
 }
 
 .coachRightLine {
