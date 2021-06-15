@@ -422,7 +422,7 @@ nav{
 /* COACH */
 
 .coachContainer {
-  min-height: 99vh;
+  min-height: 100vh;
   height: auto;
   display: flex;
   justify-content: center;
