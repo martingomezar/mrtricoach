@@ -419,6 +419,7 @@ nav{
   display: flex;
   justify-content: space-between;
   padding-top: 4em;
+  align-items: center;
 }
 
 .coachLeft {
