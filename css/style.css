@@ -580,9 +580,10 @@ nav{
   min-height: 120vh;
   height: auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   overflow: hidden;
   padding-left: 2vw;
+  padding-top: 10vw;
 }
 .form-label {
   font-family: var(--font-primario) !important;
@@ -858,7 +859,7 @@ input[type="number"] {
   /* CONTACTO */
 
   #contacto {
-    padding-top: 2em;
+    padding-top: 10vw;
     margin-bottom: 2em;
   }
 
@@ -885,7 +886,7 @@ input[type="number"] {
 }
 
 #contacto {
-  padding-top: 2em;
+  padding-top: 10vw;
   margin-bottom: 4em;
 }
 
