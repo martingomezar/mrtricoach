@@ -353,7 +353,7 @@ nav{
   display: flex;
   flex-flow: column;
   flex-wrap: wrap;
-  padding-top: 15vh;
+  padding-top: 10vh;
   flex-direction: column;
   padding-left: 3em;
   padding-right: 1em;
@@ -372,7 +372,7 @@ nav{
 
 .metodoLine {
   height: 0.5em !important;
-  width: 15em !important;
+  width: 100%;
   background-color: white !important;
   opacity: 1;
 }
@@ -735,7 +735,7 @@ input[type="number"] {
   .metodoLine {
     display: flex;
     height: 0.5em !important;
-    width: 20em !important;
+    width: 100%;
     background-color: white !important;
     opacity: 1;
   }
@@ -761,7 +761,9 @@ input[type="number"] {
     letter-spacing: 0.1em;
     padding-top: 1em;
   }
-
+  .metodoLeft{
+    padding-top: 0vh;
+  }
   /* COACH */
 
   .coachContainer {
@@ -858,7 +860,9 @@ input[type="number"] {
   /* INICIO */
 
   /* METODO */
-
+  .metodoLeft{
+    padding-top: 0vh;
+  }
   /* COACH */
 
   .coachRight {
@@ -882,7 +886,7 @@ input[type="number"] {
   .metodoLine {
     display: flex;
     height: 0.5em !important;
-    width: 20em !important;
+    width: 100%;
     background-color: white !important;
     opacity: 1;
   }
@@ -969,18 +973,59 @@ input[type="number"] {
   }
 
   /* METODO */
+  .metodoLeftTextOne {
+    width: 100%;
+    font-family: "Barlow", sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 1.7em;
+    letter-spacing: 0.1em;
+    padding-top: 1em;
+  }
 
+  .metodoLeftTextTwo {
+    width: 100%;
+    font-family: "Barlow", sans-serif !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 2em;
+    letter-spacing: 0.1em;
+    padding-top: 1em;
+  }
+  .metodoLeft {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: center;
+    align-content: center;
+    padding-top: 10vh;
+    flex-direction: column;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
   /* COACH */
 
   .coachLeftParrafo {
-    width: 50vw;
+    width: 90vw;
   }
 
   .coachRightLine span {
     font-weight: bolder;
     color: #26e673;
   }
-
+  .coachLeft{
+    padding-left: 0;
+  }
+  .coachRight{
+    padding-left: 0;
+    padding: 1.5em;
+  }
+  .coachRightLine{
+    width: 90vw;
+  }
   /*ROW CORRECCION*/
   /* Contacto */
   /* Contacto */
@@ -989,11 +1034,14 @@ input[type="number"] {
 }
 
 @media (max-width: 576px) {
-
+  .carousel-caption{
+    width: 80%;
+  }
   .carousel-caption h5 {
-    font-size: 20px;
+    font-size: 18px;
+    margin-bottom: 0;
   }
   .carousel-caption p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
