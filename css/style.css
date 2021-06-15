@@ -427,7 +427,6 @@ nav{
   flex-wrap: nowrap;
   flex-direction: column;
   padding-left: 3em;
-  justify-content: center;
   align-items: center;
 }
 
@@ -472,6 +471,7 @@ nav{
 .coachRightTitleTwo span,
 .coachRightTitleOne span {
   font-weight: bolder;
+  display: none;
 }
 
 .coachRightLine {
