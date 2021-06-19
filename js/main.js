@@ -47,3 +47,20 @@ const observer = new IntersectionObserver(verifyVisibility, options)
 for (const section of sections) {
     observer.observe(section)
 }
+
+var swiper = new Swiper(".mySwiper", {
+  speed: 600,
+  parallax: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+  },
+  pagination: {
+  el: ".swiper-pagination",
+  clickable: true
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  }
+});

@@ -22,6 +22,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <!-- CSS Local -->
     <link href="./css/style.css" rel="stylesheet" type="text/css">
 </head>
@@ -29,26 +31,26 @@
 <body>
 
     <!-- NewNavBar -->
-        <nav>
-            <div class="logo">
-                <a href="#inicio" class="logo-font">
-                    MR<span> TRI COACH</span>
-                </a>
-                <img class="logo-isotipo" src="./assets/Isotipo.png">
-            </div>
-            <ul class="nav-links">
-                <li><a class="inicio" href="#inicio">INICIO</a></li>
-                <li><a class="metodo" href="#metodo">MÉTODO</a></li>
-                <li><a class="coach" href="#coach">COACH</a></li>
-                <li><a class="testimonios" href="#testimonios">TESTIMONIOS</a></li>
-                <li><a class="contacto" href="#contacto">CONTACTO</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
+    <nav>
+        <div class="logo">
+            <a href="#inicio" class="logo-font">
+                MR<span> TRI COACH</span>
+            </a>
+            <img class="logo-isotipo" src="./assets/Isotipo.png">
+        </div>
+        <ul class="nav-links">
+            <li><a class="inicio" href="#inicio">INICIO</a></li>
+            <li><a class="metodo" href="#metodo">MÉTODO</a></li>
+            <li><a class="coach" href="#coach">COACH</a></li>
+            <li><a class="testimonios" href="#testimonios">TESTIMONIOS</a></li>
+            <li><a class="contacto" href="#contacto">CONTACTO</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
     <!-- NewNavBar -->
 
     <!-- Inicio -->
@@ -65,7 +67,9 @@
                 <path
                     d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
             </svg></a>
-        <a href="https://api.whatsapp.com/send?phone=541124511569&text=Hola%20Marcelo%2C%20quiero%20saber%20m%C3%A1s%20sobre%20los%20entrenamientos%20de%20MR%20Tri%20Coach!%20%E2%9A%A1"><img class="inicioWhatsapp" src="./assets/wsp.svg"></a>
+        <a
+            href="https://api.whatsapp.com/send?phone=541124511569&text=Hola%20Marcelo%2C%20quiero%20saber%20m%C3%A1s%20sobre%20los%20entrenamientos%20de%20MR%20Tri%20Coach!%20%E2%9A%A1"><img
+                class="inicioWhatsapp" src="./assets/wsp.svg"></a>
         <h1 class="inicioTitulo">
             Potenciá tu rendimiento.
         </h1>
@@ -100,147 +104,151 @@
             <div class="coachRightTitleOne"><span>MR</span>TRI COACH</div>
             <img class="img-fluid coachLeftImage" src="./assets/MarceloRaices.webp">
             <h3 class="coachLeftTitle">MARCELO RAICES</h3>
-            <p class="coachLeftParrafo">Profesor Nacional de Edu. Física <br> Profesor Nacional de Tenis <br> Spinning®Instructor
+            <p class="coachLeftParrafo">Profesor Nacional de Edu. Física <br> Profesor Nacional de Tenis <br>
+                Spinning®Instructor
                 Personal Trainer</p>
         </div>
         <div class="col-lg-6 coachRight">
             <div class="coachRightTitleTwo"><span>MR</span> TRI COACH</div>
             <p class="coachRightLine">Soy Marcelo y mi vida es la actividad física. <span>Soy Profesor, Entrenador y
                     Deportista.</span>
-            <p class="coachRightLine">
-                Soy <span>triatleta amateur en Age Group con 13 IM y 4 Half IM.</span> También fui entre otras cosas:
-                corredor de carreras de aventura multidisciplina de larga distancia, jugador de Squash y corredor de
-                carreras de calle de 8 a 42 km.</p>
-            <p class="coachRightLine">A lo largo de los años diseñando mi propio entrenamiento y el de otros,
-                fui considerando la <span>importancia del entrenamiento personalizado.</span> Cada cuerpo es distinto y
-                cada
-                persona
-                tiene objetivos distintos.</p>
-            <p class="coachRightLine">En el 2015 creé <span>MR</span> TRI COACH para ayudar a
-                deportistas y atletas a <span>mejorar su
-                    rendimiento y optimizar su tiempo con entrenamientos a su medida.</span></p>
+                <p class="coachRightLine">
+                    Soy <span>triatleta amateur en Age Group con 13 IM y 4 Half IM.</span> También fui entre otras
+                    cosas:
+                    corredor de carreras de aventura multidisciplina de larga distancia, jugador de Squash y corredor de
+                    carreras de calle de 8 a 42 km.</p>
+                <p class="coachRightLine">A lo largo de los años diseñando mi propio entrenamiento y el de otros,
+                    fui considerando la <span>importancia del entrenamiento personalizado.</span> Cada cuerpo es
+                    distinto y
+                    cada
+                    persona
+                    tiene objetivos distintos.</p>
+                <p class="coachRightLine">En el 2015 creé <span>MR</span> TRI COACH para ayudar a
+                    deportistas y atletas a <span>mejorar su
+                        rendimiento y optimizar su tiempo con entrenamientos a su medida.</span></p>
             </p>
         </div>
     </section>
     <!-- Testimonios -->
     <section id="testimonios" class="section">
         <article>
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-                        aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
-                        aria-label="Slide 6"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
-                        aria-label="Slide 7"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
-                        aria-label="Slide 8"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
-                        aria-label="Slide 9"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="carousel-caption d-md-block">
-                            <h5>“Marce es un excelente profesor, está en la búsqueda constante para la mejora de mi
-                                estado físico y me acompaña en la búsqueda de conseguir mis objetivos personales”</h5>
-                            <p>Diego Pugnali</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-caption d-md-block">
-                            <h5>“Gracias a MR Tri Coach pude mejorar exponencialmente mi condición física aplicado al
-                                deporte que practico.
-                                Marce esta siempre atento a las necesidades de cada uno y se maneja con mucha agilidad a
-                                la hora de armar los planes semanales”</h5>
-                            <p>Juan Vugdelija</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-caption d-md-block">
-                            <h5>“Nada mas lindo que sentirse un profesional siendo un deportista amateur! Marcelo siente
-                                y respira deporte. Un apasionado de lo que hace. Feliz de formar parte del grupo”</h5>
-                            <p>Gonzalo Walfenson</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-caption d-md-block">
-                            <h5>“Necesitaba hacer un cambio en mi entrenamiento,
-                                estaba en búsqueda de ciertos objetivos que no podía alcanzar y hoy puedo decir que fue
-                                un antes y un después en mi entrenamiento sumarme a este equipo. Cuando inicie tuve mi
-                                primer charla con Marcelo sobre mis objetivos y después de acordar como comenzariamos el
-                                proceso me fui y me di cuenta que me había sentido realmente escuchada en relación a mis
-                                objetivos de entrenamiento. Hoy, luego de estos meses, donde hicimos un cambio radical
-                                …”</h5>
-                            <p>Antonela Cafferata</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-caption d-md-block">
-                            <h5>“MR TRI Coach me ayudo a dar mis primeros pasos en el triatlon y a establecer objetivos
-                                concretos y logrables. Marcelo siempre esta disponible para despejar dudas con respecto
-                                a los entrenamientos y los propositos de los mismos.”</h5>
-                            <p>Héctor Bulgarini</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-caption d-md-block">
-                            <h5>“Si queres correr un 5K o un full IM, MR Tri Coach te va a preparar con la misma
-                                dedicación y profesionalismo que a los pros. En 4 años de entrenamiento me llevó sin
-                                darme cuenta a pensar que un IM es posible aunque nunca había entrenado para eso. Se lo
-                                recomiendo a cualquiera, con cualquier nivel, cualquier estado, cualquier objetivo.”
-                            </h5>
-                            <p>Pablo Sánchez</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-caption d-md-block">
-                            <h5>“Vengo entrenando con Marcelo desde hace varios años, puedo decir q lo que mas se
-                                destaca es su profesionalismo y compromiso, obsesivo con los numeros y el seguimiento de
-                                las actividades. Espero seguir trabajando con el por muchos años mas!!!”</h5>
-                            <p>Charly Vyhñak</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-caption d-md-block">
-                            <h5>“MR TRI Coach me ayudo a dar mis primeros pasos en el triatlon y a establecer objetivos
-                                concretos y logrables. Marcelo siempre esta disponible para despejar dudas con respecto
-                                a los entrenamientos y los propositos de los mismos.”</h5>
-                            <p>Héctor Bulgarini</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-caption d-md-block">
-                            <h5>“El comenzar con disciplinas nuevas genero un mar
-                                de dudas y consultas constantes a cualquier hora casi a diario que muy didácticamente
-                                Marce me fue respondiendo, y aclarando. Hoy después de todos estos meses
-                                mis marcas mejoraron, entreno un promedio de 8hs o mas semanales, puedo correr fondos de
-                                mas de 10k, rodar 60km los fines de semana y nadar un promedio diario de 1500 mts o
-                                hacer cada tanto un fondo en aguas abiertas.”</h5>
-                            <p>Daniel Arballo</p>
-                        </div>
-                    </div>
+            <!-- Swiper -->
 
-                    <img src="./assets/foto-mrtricoach-team.webp" class="img-fondo-carrousel d-block w-100"
-                        alt="Marcelo y su equipo">
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;"
+                class="swiper-container mySwiper">
+                <div class="parallax-bg" style="
+                background-image: url(./assets/foto-mrtricoach-team.webp);" 
+                data-swiper-parallax="-0%"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="text" data-swiper-parallax="-100">
+                            <p>
+                                “Marce es un excelente profesor, está en la búsqueda constante
+                                para la mejora de mi estado físico y me acompaña en la búsqueda de
+                                conseguir mis objetivos personales”
+                            </p>
+                        </div>
+                        <div class="title" data-swiper-parallax="-300">DIEGO PUGNALI</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="text" data-swiper-parallax="-100">
+                            <p>
+                                “Gracias a MR Tri Coach pude mejorar exponencialmente mi condición
+                                física aplicado al deporte que practico. Marce esta siempre atento
+                                a las necesidades de cada uno y se maneja con mucha agilidad a la
+                                hora de armar los planes semanales”
+                            </p>
+                        </div>
+                        <div class="title" data-swiper-parallax="-300">JUAN VUGDELIJA</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="text" data-swiper-parallax="-100">
+                            <p>
+                                “Nada mas lindo que sentirse un profesional siendo un deportista
+                                amateur! Marcelo siente y respira deporte. Un apasionado de lo que
+                                hace. Feliz de formar parte del grupo”
+                            </p>
+                        </div>
+                        <div class="title" data-swiper-parallax="-300">GONZALO WALFENSON</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="text" data-swiper-parallax="-100">
+                            <p>
+                                “Necesitaba hacer un cambio en mi entrenamiento, estaba en
+                                búsqueda de ciertos objetivos que no podía alcanzar y hoy puedo
+                                decir que fue un antes y un después en mi entrenamiento sumarme a
+                                este equipo. Cuando inicie tuve mi primer charla con Marcelo sobre
+                                mis objetivos y después de acordar como comenzariamos el proceso
+                                me fui y me di cuenta que me había sentido realmente escuchada en
+                                relación a mis objetivos de entrenamiento. Hoy, luego de estos
+                                meses, donde hicimos un cambio radical …”
+                            </p>
+                        </div>
+                        <div class="title" data-swiper-parallax="-300">
+                            ANTONELA CAFFERATA
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="text" data-swiper-parallax="-100">
+                            <p>
+                                “MR TRI Coach me ayudo a dar mis primeros pasos en el triatlon y a
+                                establecer objetivos concretos y logrables. Marcelo siempre esta
+                                disponible para despejar dudas con respecto a los entrenamientos y
+                                los propositos de los mismos.”
+                            </p>
+                        </div>
+                        <div class="title" data-swiper-parallax="-300">
+                            HÉCTOR BULGARINI
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="text" data-swiper-parallax="-100">
+                            <p>
+                                “Si queres correr un 5K o un full IM, MR Tri Coach te va a
+                                preparar con la misma dedicación y profesionalismo que a los pros.
+                                En 4 años de entrenamiento me llevó sin darme cuenta a pensar que
+                                un IM es posible aunque nunca había entrenado para eso. Se lo
+                                recomiendo a cualquiera, con cualquier nivel, cualquier estado,
+                                cualquier objetivo.”
+                            </p>
+                        </div>
+                        <div class="title" data-swiper-parallax="-300">
+                            PABLO SÁNCHEZ
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="text" data-swiper-parallax="-100">
+                            <p>
+                                “Vengo entrenando con Marcelo desde hace varios años, puedo decir
+                                q lo que mas se destaca es su profesionalismo y compromiso,
+                                obsesivo con los numeros y el seguimiento de las actividades.
+                                Espero seguir trabajando con el por muchos años mas!!!”
+                            </p>
+                        </div>
+                        <div class="title" data-swiper-parallax="-300">
+                            CHARLY VYHÑAK
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="text" data-swiper-parallax="-100">
+                            <p>
+                                “El comenzar con disciplinas nuevas genero un mar de dudas y
+                                consultas constantes a cualquier hora casi a diario que muy
+                                didácticamente Marce me fue respondiendo, y aclarando. Hoy después
+                                de todos estos meses mis marcas mejoraron, entreno un promedio de
+                                8hs o mas semanales, puedo correr fondos de mas de 10k, rodar 60km
+                                los fines de semana y nadar un promedio diario de 1500 mts o hacer
+                                cada tanto un fondo en aguas abiertas.”
+                            </p>
+                        </div>
+                        <div class="title" data-swiper-parallax="-300">
+                            DANIEL ARBALLO
+                        </div>
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </article>
     </section>
@@ -288,10 +296,12 @@
     <footer class="footerContainer">
 
     </footer>
+    <!-- Swiper -->
+    <script src="./js/swiper-bundle.min.js"></script>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
     <!-- JS -->
     <script src="js/main.js"></script>
 </body>
