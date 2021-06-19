@@ -518,6 +518,18 @@ body {
   overflow-x: hidden
 }
 /*Swiper*/
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  opacity: .25;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: var(--color-primario,var(--swiper-theme-color));
+}
 .swiper-container {
   overflow: hidden;
   width: 100%;
