@@ -2,17 +2,24 @@ const navSlide = ()=>{
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav-links');
   const navLinks = document.querySelectorAll('.nav-links li');
-  nav.addEventListener('click', ()=>{
-    nav.classList.remove('nav-active');
-    navLinks.forEach((link,index) =>{
-      if(link.style.animation){
-        link.style.animation = '';
-      } else{
-        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 4 + 0.5}s`;
-      }
-    });
-    burger.classList.remove('toggle');
-  })
+  const navFadeRemove = (navLinkA) => {
+    const navLinksA = document.querySelector(`.${navLinkA}`);
+    navLinksA.addEventListener('click', ()=>{
+      nav.classList.remove('nav-active');
+      navLinks.forEach((link,index) =>{
+        if(link.style.animation){
+          link.style.animation = '';
+        } else{
+          link.style.animation = `navLinkFade 0.5s ease forwards ${index / 4 + 0.5}s`;
+        }
+      });
+      burger.classList.remove('toggle');
+    })
+  }
+  const sections = ['inicio', 'metodo', 'coach', 'testimonios', 'contacto'];
+  for (let i = 0; i < sections.length; i++) {
+    navFadeRemove(sections[i]);
+  }
   burger.addEventListener('click', ()=>{
     nav.classList.toggle('nav-active');
     navLinks.forEach((link,index) =>{
