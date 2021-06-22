@@ -1108,12 +1108,32 @@ input[type="number"] {
     width: 90vw;
   }
   /*ROW CORRECCION*/
+  /*TESTIMONIOS*/
+
+
   /* Contacto */
   .title-contacto{
     font-size: 10vw;
   }
-  /* Contacto */
-
+  #contacto {
+    padding-top: 16vh;
+    margin-bottom: 5em;
+}
+.form-label {
+  font-family: var(--font-primario) !important;
+  font-weight: 500;
+  font-size: 20px;
+}
+.form-control {
+  font-size: 1rem;
+  line-height: 0.5;
+}
+.row>* {
+  margin-top: 1.5rem;
+}
+.form-label {
+  margin-bottom: .2rem;
+}
   /* Footer */
 }
 
