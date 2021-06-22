@@ -2,8 +2,7 @@ const navSlide = ()=>{
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav-links');
   const navLinks = document.querySelectorAll('.nav-links li');
-  const navLinksA = document.querySelectorAll('.nav-links li a');
-  navLinksA.addEventListener('click', ()=>{
+  nav.addEventListener('click', ()=>{
     nav.classList.remove('nav-active');
     navLinks.forEach((link,index) =>{
       if(link.style.animation){
