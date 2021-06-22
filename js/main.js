@@ -2,7 +2,7 @@ const navSlide = ()=>{
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav-links');
   const navLinks = document.querySelectorAll('.nav-links li');
-  nav.addEventListener('click', ()=>{
+  navLinks.addEventListener('click', ()=>{
     nav.classList.remove('nav-active');
     navLinks.forEach((link,index) =>{
       if(link.style.animation){
@@ -63,7 +63,7 @@ var swiper = new Swiper(".mySwiper", {
   speed: 600,
   parallax: true,
   autoplay: {
-    delay: 5000,
+    delay: 30000,
     disableOnInteraction: false
   },
   pagination: {
